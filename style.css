@@ -1,0 +1,72 @@
+.container-fluid {
+    height: 100dvh;
+    background-color: #053345;
+}
+
+.btn{
+  background-color: #ffffff;
+  color: #053345;
+}
+
+.btn:hover{
+    color: white;
+    border: white;
+
+}
+
+.table-responsive{
+    background-color: transparent;
+}
+
+.card{
+    align-items: center;
+    height: 100%;
+    background-color: #053345;
+}
+
+
+
+
+
+/* Cards */
+.container-cards {
+    min-height: 100dvh;
+}
+
+.grid-cards .card{
+    background-image: var(--gradient);
+    cursor: pointer;
+
+}
+    
+
+.grid-cards img {
+    aspect-ratio: 1/1;
+    margin-top: 5px;
+    width: 80%;
+   text-align: left;
+    display: block;
+    margin: auto;
+}
+
+.card-bio {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.card-bio p{
+    border-top: 1px solid #ffffff;
+    
+    padding-top: 10px;
+    font-size: 14px;
+    color: #fff ;
+}
+
+.card-title{
+    text-align: center;
+    color: #fff;
+}
+
+

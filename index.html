@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prova Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container-fluid">
+        <h1 class="fs-1 text-white text-center">Profissões do Futuro</h1>
+
+
+        <form id="form-notas" name="form-notas" method="get" action="">
+            <div class="row px-3">
+                <select class="form-select my-3 col-md-6" aria-label="Exemplo de seleção">
+                    <h2>Escolha sua Profissão</h2>
+                    <option value="0" disabled selected>Ex.: Medicina</option>
+                     <option value="25">Engenheiro de Ética em IA</option>
+                     <option value="20">Designer de Experiências Imersivas</option>
+                     <option value="30">Terapeuta Digital</option>
+                     <option value="25">Consultor de Transição Verde</option>
+                     <option value="20">Especialista em Requalificação Profissional</option>
+                     <option value="15">Curador de Dados e Conteúdo de IA</option>
+                     <option value="20">Analista de Carbono e Sustentabilidade</option>
+                     <option value="15">Arquiteto de Ambientes Virtuais</option>
+                     <option value="25">Engenheiro de Biotecnologia Verde</option>
+                     <option value="40">Especialista em Cibersegurança Quântica</option>
+                </select>
+
+                <section class="my-3 col-md-6">
+                    <label for="impacto" class="form-label text-white">Impacto Social</label>
+                    <input type="text" id="impacto" name="impacto" class="form-control" required minlength="1"
+                        maxlength="4" placeholder="Ex.: Salvar Vidas  " min="0" max="100">
+                </section>
+
+
+                <section class="my-3 col-md-6">
+                    <label for="autonomia" class="form-label text-white">Nível de Automação</label>
+                    <input type="text" id="automacao" name="automacao" class="form-control" required minlength="1"
+                        maxlength="4" placeholder="Ex.: Nível médio" min="0" max="100">
+                </section>
+
+                <section class="my-3 col-md-6">
+                    <label for="kmrodado" class="form-label text-white">Demanda Estimada</label>
+                    <input type="text" id="demanda" name="demanda" class="form-control" required minlength="1"
+                        maxlength="4" placeholder="ex: Alta" min="0" max="100">
+                </section>
+
+                <section class="my-3 col-md-6">
+                    <label for="kmrodado" class="form-label text-white">Relevância</label>
+                    <input type="text" id="relevancia" name="demanda" class="form-control" required minlength="1"
+                        maxlength="4" placeholder="0 a 100" min="0" max="100">
+                </section>
+
+
+                <section class="my-5 d-flex justify-content-end">
+                    <button type="submit" class="btn">Confirmar Profissão</button>
+                </section>
+            </div>
+        </form>
+
+
+        
+        <div class="table-responsive">
+
+            <table class="table text-white text-center">
+
+                <thead >
+                    <tr>
+                        <th>Profissão</th>
+                        <th>Impacto Social
+                        </th>
+                        <th>Nível de Automação
+                        </th>
+                        <th>Demanda Estimada
+                        </th>
+                        <th>Relevância
+                        </th>
+
+                    </tr>
+                </thead>
+
+                <tbody id="resumoProfissoes"></tbody>
+
+
+            </table>
+        </div>
+    </main>
+
+
+    <div class="card">
+
+        <h2 class="text-light py-5 px-3 text-center">Profissional</h2>
+        <main class="container-cards">
+            <section class="grid-cards row row-cols-1 row-cols-md-2 row-cols-lg-3  row-cols-xl-4" id="grid-cards">
+                <div class="col my-3">
+                    <div class="card">
+                        <img src="./img/image-1.png" class="card-img-top img-fluid jogador" alt="${jogador.nome}">
+                        <div class="card-body">
+                            <h5 class="card-title">André Texeira</h5>
+                            <div class="card-bio">
+                                <p> Cargo: Clínico Geral</p>
+                                <p> Formação: Medicina </p>
+                                <p> Área de atuação: Atenção primária a saúde e prevenção de doenças</p>
+                                <p> Biografia: Médico experiente, dedicado à prevenção, diagnóstico e promoção da saúde
+                                    dos pacientes.</p>
+                                <p> Contato: www.andreteixeira.com.br contato@andreteixeira.com.br</p>
+                                <p> Salário: R$ 280,00/hora</p>
+                                <section class="my-5 d-flex justify-content-end">
+                                    <button type="submit" class="btn">Contato</button>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
